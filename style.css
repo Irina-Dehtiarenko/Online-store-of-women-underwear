@@ -14,14 +14,8 @@
 }
 body {
   font-family: "Bodoni Moda", serif;
-  /* background-color: var(--color-light-grey); */
 }
-p {
-  color: var(--color-grey);
-  font-family: "Lora", serif;
-  font-size: 12px;
-  line-height: 16px;
-}
+
 div.container-header {
   background-color: var(--color-light-grey);
 }
@@ -38,7 +32,6 @@ header {
   width: 40px;
   height: 100%;
   margin: 15px 0 0 10px;
-  /* padding: 5px 0 0 0; */
   position: relative;
 }
 .menu-mobile::before,
@@ -83,36 +76,7 @@ li {
   cursor: pointer;
 }
 
-/* #language-select option {
-  text-transform: uppercase;
-} */
-
-/* main */
-main {
-}
-
-/* .collection-2022 {
-  position: relative;
-
-}
-.collection-2022 .bg-img {
-  z-index: 23;
-  display: flex;
-  position: absolute;
-  top: -30px;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(./images-main/mobile/backgroung_main-mobile.png);
-  background-size: cover;
-  background-position-y: -40px;
-  background-repeat: no-repeat;
-} */
-
-/* section-collection */
 section.collection-2022 {
-  /* position: absolute;
-  top: 80px; */
   height: 600px;
   color: var(--color-white);
   text-align: center;
@@ -155,7 +119,6 @@ button.search {
   background: var(--color-green);
   border-radius: 15px 0 15px 0;
   border: none;
-  /* outline: 0.1px solid var(--color-green); */
 }
 button.search {
   position: absolute;
@@ -176,24 +139,47 @@ button.shop-now {
 }
 .fashion-collection {
 }
+
+.section h2 {
+  padding: 50px 0 15px 20px;
+  font-size: 32px;
+  text-align: left;
+}
+.section div.container-img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.section div.container-img img {
+  width: 100%;
+}
+
+.section .description {
+  margin: 20px 30px;
+}
+.section p {
+  margin-bottom: 15px;
+  color: var(--color-grey);
+  font-family: "Lora", serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.section .show-all {
+  text-align: right;
+}
+.section .show-all a {
+  padding-right: 12px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .fashion-collection h2,
 .fashion-collection div.container-img div.year {
   background: var(--color-white);
   color: var(--color-orange);
 }
-.fashion-collection h2 {
-  padding: 40px 0 15px 0;
-  font-size: 32px;
-  text-align: center;
-}
 
-.fashion-collection div.container-img {
-  position: relative;
-  width: 100%;
-}
-.fashion-collection div.container-img img {
-  width: 100%;
-}
 .fashion-collection div.container-img div.year {
   position: absolute;
   top: 0;
@@ -204,23 +190,6 @@ button.shop-now {
 .fashion-collection div.container-img div.year div {
   line-height: 40px;
 }
-.fashion-collection .description {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
-  margin: 5px 30px;
-}
-.fashion-collection .description p {
-  margin-bottom: 15px;
-}
-.show-all {
-  text-align: right;
-}
-.show-all a {
-  padding-right: 12px;
-  font-size: 20px;
-  font-weight: 500;
-}
 
 .show-all a:link,
 .show-all a:visited,
@@ -230,9 +199,20 @@ button.shop-now {
 }
 .show-all a:hover {
 }
-/* .fashion-collection .description:first-child {
-  margin-bottom: 20px;
-} */
+
+.swimwear h2 {
+  font-size: 42px;
+  padding-bottom: 0;
+}
+
+.swimwear h2,
+.swimwear a:link,
+.swimwear a:visited,
+.swimwear a:hover,
+.swimwear a:active {
+  color: var(--color-green);
+}
+
 @media screen and (max-width: 300px) {
   .fashion-collection h2,
   .fashion-collection div.container-img div.year {
@@ -241,8 +221,8 @@ button.shop-now {
   .fashion-collection div.container-img div.year div {
     line-height: 32px;
   }
-  .fashion-collection .description {
-    margin: 5px 20px;
+  .section .description {
+    margin: 15px 20px;
   }
 }
 @media screen and (min-width: 300px) {
