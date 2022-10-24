@@ -1,7 +1,8 @@
 :root {
   --color-white: #fff;
   --color-green: #6c8f79;
-  --color-grey: #c1c1c1;
+  --color-light-grey: #c1c1c1;
+  --color-grey: #565656;
   --color-dark-grey: #626262;
   --color-orange: #dc8812;
 }
@@ -13,7 +14,16 @@
 }
 body {
   font-family: "Bodoni Moda", serif;
-  background-color: var(--color-grey);
+  /* background-color: var(--color-light-grey); */
+}
+p {
+  color: var(--color-grey);
+  font-family: "Lora", serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+div.container-header {
+  background-color: var(--color-light-grey);
 }
 header {
   display: flex;
@@ -21,6 +31,7 @@ header {
   padding: 20px 10px;
   color: var(--color-dark-grey);
   background-color: var(--color-white);
+  /* box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.1); */
   border-radius: 25px;
 }
 .menu-mobile {
@@ -39,7 +50,7 @@ header {
   margin: 2px 0;
   position: absolute;
   left: 0;
-  background-color: var(--color-grey);
+  background-color: var(--color-light-grey);
 }
 .menu-mobile::before {
   top: 0;
@@ -55,7 +66,7 @@ li {
   list-style: none;
 }
 
-.lable {
+.lable p {
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -80,6 +91,24 @@ li {
 main {
 }
 
+/* .collection-2022 {
+  position: relative;
+
+}
+.collection-2022 .bg-img {
+  z-index: 23;
+  display: flex;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./images-main/mobile/backgroung_main-mobile.png);
+  background-size: cover;
+  background-position-y: -40px;
+  background-repeat: no-repeat;
+} */
+
 /* section-collection */
 section.collection-2022 {
   /* position: absolute;
@@ -87,14 +116,14 @@ section.collection-2022 {
   height: 600px;
   color: var(--color-white);
   text-align: center;
-  background-image: url(./images-main/backgroung_main.png);
+  background-image: url(./images-main/mobile/backgroung_main-mobile.png);
   background-size: cover;
   background-position-y: -40px;
   background-repeat: no-repeat;
 }
 section.collection-2022 h1 {
   padding-top: 130px;
-  margin-bottom: 40px;
+  margin: 0 15px 40px 15px;
 }
 div.search {
   position: relative;
@@ -117,7 +146,7 @@ input.search {
 input.search::placeholder {
   /* padding-left: 15px; */
   font-size: 8px;
-  color: var(--color-grey);
+  color: var(--color-light-grey);
 }
 button.shop-now,
 button.search {
@@ -145,7 +174,77 @@ button.shop-now {
   font-size: 16px;
   text-transform: uppercase;
 }
+.fashion-collection {
+}
+.fashion-collection h2,
+.fashion-collection div.container-img div.year {
+  background: var(--color-white);
+  color: var(--color-orange);
+}
+.fashion-collection h2 {
+  padding: 40px 0 15px 0;
+  font-size: 32px;
+  text-align: center;
+}
 
+.fashion-collection div.container-img {
+  position: relative;
+  width: 100%;
+}
+.fashion-collection div.container-img img {
+  width: 100%;
+}
+.fashion-collection div.container-img div.year {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  padding: 0 5px;
+  font-size: 32px;
+}
+.fashion-collection div.container-img div.year div {
+  line-height: 40px;
+}
+.fashion-collection .description {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  margin: 5px 30px;
+}
+.fashion-collection .description p {
+  margin-bottom: 15px;
+}
+.show-all {
+  text-align: right;
+}
+.show-all a {
+  padding-right: 12px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.show-all a:link,
+.show-all a:visited,
+.show-all a:hover,
+.show-all a:active {
+  color: var(--color-orange);
+}
+.show-all a:hover {
+}
+/* .fashion-collection .description:first-child {
+  margin-bottom: 20px;
+} */
+@media screen and (max-width: 300px) {
+  .fashion-collection h2,
+  .fashion-collection div.container-img div.year {
+    font-size: 24px;
+  }
+  .fashion-collection div.container-img div.year div {
+    line-height: 32px;
+  }
+  .fashion-collection .description {
+    margin: 5px 20px;
+  }
+}
 @media screen and (min-width: 300px) {
   section.collection-2022 h1 {
     /* line-height: 50px; */
@@ -166,6 +265,21 @@ button.shop-now {
   }
   button.shop-now {
     margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  section.collection-2022 h1 {
+    padding-top: 150px;
+  }
+  main p {
+    font-size: 15px;
+    line-height: 19px;
+  }
+}
+@media screen and (min-width: 500px) {
+  section.collection-2022 h1 {
+    padding-top: 200px;
   }
 }
 
