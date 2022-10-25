@@ -207,6 +207,18 @@ button.shop-now {
 .swimwear a:active {
   color: var(--color-green);
 }
+.classic h2 {
+  font-size: 64px;
+  padding-bottom: 0;
+}
+
+.classic h2,
+.classic a:link,
+.classic a:visited,
+.classic a:hover,
+.classic a:active {
+  color: var(--color-dark-grey);
+}
 
 @media screen and (max-width: 300px) {
   .fashion-collection h2,
@@ -248,7 +260,7 @@ button.shop-now {
     padding-top: 150px;
   }
   main p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 19px;
   }
 }
