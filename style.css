@@ -220,6 +220,29 @@ button.shop-now {
   color: var(--color-dark-grey);
 }
 
+.new-collection {
+  position: relative;
+  width: 100%;
+  min-height: 560px;
+  background-color: var(--color-white);
+  background-image: url(./images-main/mobile/bg-collectio-mobile.png);
+  background-size: cover;
+  background-position-y: -40px;
+}
+.new-collection h2 {
+  margin: 0 20px;
+  padding-top: 50px;
+  font-size: 48px;
+  color: var(--color-white);
+}
+.new-collection .shop-now {
+  /* margin: 0 auto; */
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translateX(-50%);
+}
+
 @media screen and (max-width: 300px) {
   .fashion-collection h2,
   .fashion-collection div.container-img div.year {
@@ -230,6 +253,9 @@ button.shop-now {
   }
   .section .description {
     margin: 15px 20px;
+  }
+  .new-collection h2 {
+    font-size: 38px;
   }
 }
 @media screen and (min-width: 300px) {
