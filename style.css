@@ -287,8 +287,12 @@ button.shop-now {
   flex-direction: column;
   align-items: center;
   text-align: center;
+
   padding: 0 31px;
   color: var(--color-green);
+}
+.ordering div {
+  margin-bottom: 20px;
 }
 .ordering h2 {
   padding-bottom: 20px;
@@ -301,6 +305,9 @@ button.shop-now {
   padding: 0 30px;
   font-size: 12px;
   line-height: 16px;
+}
+.ordering .icon img {
+  width: 60px;
 }
 .delivery {
   margin-top: 230px;
@@ -322,6 +329,7 @@ button.shop-now {
   justify-content: space-between;
   width: 45%;
   padding: 10px 0;
+  margin: 0 auto;
 }
 
 .dots .dot {
@@ -363,6 +371,9 @@ div.slide-img img {
   }
   .ordering p {
     padding: 0 10px;
+  }
+  .ordering .icon img {
+    width: 50px;
   }
   .delivery {
     margin-top: 300px;
