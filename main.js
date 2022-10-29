@@ -8,6 +8,9 @@ const allDotsOrder = [...document.querySelectorAll(".how-to-order .dot")];
 
 const allOrderSteps = [...document.querySelectorAll(".order-steps div.step")];
 
+const allImg = [...document.querySelectorAll(".slide-img img.img")];
+
+console.log(allImg);
 const changeDescription = (e) => {
   //   console.log(e.target);
   allDotsDelivery.forEach((dot) => {
@@ -57,3 +60,23 @@ const changeDescriptionOrder = (e) => {
 allDotsOrder.forEach((dot) => {
   dot.addEventListener("click", changeDescriptionOrder);
 });
+
+let number = 0;
+const changeSlide = () => {
+  number++;
+  allImg.forEach((img) => {
+    img.classList.add("hidden");
+  });
+
+  if (number < 0) {
+    number = 2;
+    allImg[number].classList.remove("hidden");
+  } else if (number > 2) {
+    number = 0;
+    allImg[number].classList.remove("hidden");
+  } else {
+    allImg[number].classList.remove("hidden");
+  }
+};
+
+let intervalIndex = setInterval(changeSlide, 3000);
